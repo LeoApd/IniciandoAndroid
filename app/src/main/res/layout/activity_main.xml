@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="8dp"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/text_data_hoje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="01/01/1999" />
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/text_data_hoje"
+        android:background="@color/colorPrimary"/>
+    
+    <TextView
+        android:id="@+id/text_label_dias_restante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_data_hoje"
+        android:layout_marginTop="160dp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/dias_restantes_para_o_fim_do_ano"/>
+
+    <TextView
+        android:id="@+id/text_dias_restante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="365 Dias"
+        android:textSize="50sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_label_dias_restante"
+        android:layout_marginTop="16dp"
+        />
+    
+    <Button
+        android:id="@+id/button_confirmacao"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_background"
+        android:textSize="20sp"
+        android:textColor="@color/colorTextWhite"
+        android:text="SIM/NÃO/Não confirmado" />
+
+</RelativeLayout>
